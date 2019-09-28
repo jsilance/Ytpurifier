@@ -1,0 +1,1 @@
+cat link-page-input.html | grep "yt-simple-endpoint style-scope ytd-playlist-video-renderer" | cut -c 85-193 | awk -vFS="" -vOFS="" '{$12=$12"son"}1' | awk -vFS="" -vOFS="" '{$1=$1"start "}1' > output1.txt
